@@ -4,16 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "css": "NODE_ENV=production tailwindcss-cli build -c ./tailwind.config.js -o styles.min.css"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.2.5",
-    "postcss": "^8.2.15",
-    "tailwindcss": "^2.1.2"
+    "vite": "^2.4.3",
+    "vite-plugin-windicss": "^1.2.6",
+    "windicss": "^3.1.6"
   },
   "dependencies": {
-    "tailwindcss-cli": "^0.1.2"
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
   }
 }
